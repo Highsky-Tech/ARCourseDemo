@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0FA7677572DCF4476F90790E /* libPods-ARCourseDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 095098C1CE04FE301E1C2330 /* libPods-ARCourseDemo.a */; };
 		AE4E45FE26843400009478B4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4E45FD26843400009478B4 /* AppDelegate.m */; };
 		AE4E460126843400009478B4 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4E460026843400009478B4 /* SceneDelegate.m */; };
 		AE4E460426843400009478B4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4E460326843400009478B4 /* ViewController.m */; };
@@ -14,9 +15,13 @@
 		AE4E460926843402009478B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE4E460826843402009478B4 /* Assets.xcassets */; };
 		AE4E460C26843402009478B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE4E460A26843402009478B4 /* LaunchScreen.storyboard */; };
 		AE4E460F26843402009478B4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4E460E26843402009478B4 /* main.m */; };
+		AEC24B2826847F7800EBF685 /* arlogo.png in Resources */ = {isa = PBXBuildFile; fileRef = AEC24B2726847F7800EBF685 /* arlogo.png */; };
+		AEC24B2B2684812100EBF685 /* launchbg.png in Resources */ = {isa = PBXBuildFile; fileRef = AEC24B2A2684812100EBF685 /* launchbg.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0535B6297CD8F07C8E7CB208 /* Pods-ARCourseDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARCourseDemo.release.xcconfig"; path = "Target Support Files/Pods-ARCourseDemo/Pods-ARCourseDemo.release.xcconfig"; sourceTree = "<group>"; };
+		095098C1CE04FE301E1C2330 /* libPods-ARCourseDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ARCourseDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE4E45F926843400009478B4 /* ARCourseDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARCourseDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE4E45FC26843400009478B4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AE4E45FD26843400009478B4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -29,6 +34,9 @@
 		AE4E460B26843402009478B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE4E460D26843402009478B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE4E460E26843402009478B4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AEC24B2726847F7800EBF685 /* arlogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arlogo.png; sourceTree = "<group>"; };
+		AEC24B2A2684812100EBF685 /* launchbg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launchbg.png; sourceTree = "<group>"; };
+		F182CB19731B86C10BBF6BAB /* Pods-ARCourseDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARCourseDemo.debug.xcconfig"; path = "Target Support Files/Pods-ARCourseDemo/Pods-ARCourseDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,17 +44,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FA7677572DCF4476F90790E /* libPods-ARCourseDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		088CD61697C22B7F99047577 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F182CB19731B86C10BBF6BAB /* Pods-ARCourseDemo.debug.xcconfig */,
+				0535B6297CD8F07C8E7CB208 /* Pods-ARCourseDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		AE4E45F026843400009478B4 = {
 			isa = PBXGroup;
 			children = (
 				AE4E45FB26843400009478B4 /* ARCourseDemo */,
 				AE4E45FA26843400009478B4 /* Products */,
+				088CD61697C22B7F99047577 /* Pods */,
+				B723629ECD8F93304C18547A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,11 +89,21 @@
 				AE4E460326843400009478B4 /* ViewController.m */,
 				AE4E460526843400009478B4 /* Main.storyboard */,
 				AE4E460826843402009478B4 /* Assets.xcassets */,
+				AEC24B2726847F7800EBF685 /* arlogo.png */,
+				AEC24B2A2684812100EBF685 /* launchbg.png */,
 				AE4E460A26843402009478B4 /* LaunchScreen.storyboard */,
 				AE4E460D26843402009478B4 /* Info.plist */,
 				AE4E460E26843402009478B4 /* main.m */,
 			);
 			path = ARCourseDemo;
+			sourceTree = "<group>";
+		};
+		B723629ECD8F93304C18547A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				095098C1CE04FE301E1C2330 /* libPods-ARCourseDemo.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,9 +113,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AE4E461226843402009478B4 /* Build configuration list for PBXNativeTarget "ARCourseDemo" */;
 			buildPhases = (
+				21AC41A70274EA0880D03DB1 /* [CP] Check Pods Manifest.lock */,
 				AE4E45F526843400009478B4 /* Sources */,
 				AE4E45F626843400009478B4 /* Frameworks */,
 				AE4E45F726843400009478B4 /* Resources */,
+				0CBB7203B657DDFFF232493A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -133,12 +165,56 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE4E460C26843402009478B4 /* LaunchScreen.storyboard in Resources */,
+				AEC24B2826847F7800EBF685 /* arlogo.png in Resources */,
 				AE4E460926843402009478B4 /* Assets.xcassets in Resources */,
+				AEC24B2B2684812100EBF685 /* launchbg.png in Resources */,
 				AE4E460726843400009478B4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0CBB7203B657DDFFF232493A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ARCourseDemo/Pods-ARCourseDemo-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ARCourseDemo/Pods-ARCourseDemo-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ARCourseDemo/Pods-ARCourseDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		21AC41A70274EA0880D03DB1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ARCourseDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AE4E45F526843400009478B4 /* Sources */ = {
@@ -288,12 +364,14 @@
 		};
 		AE4E461326843402009478B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F182CB19731B86C10BBF6BAB /* Pods-ARCourseDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ATQ58NGU7W;
 				INFOPLIST_FILE = ARCourseDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,12 +384,14 @@
 		};
 		AE4E461426843402009478B4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0535B6297CD8F07C8E7CB208 /* Pods-ARCourseDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ATQ58NGU7W;
 				INFOPLIST_FILE = ARCourseDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

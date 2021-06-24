@@ -18,5 +18,8 @@
     // Do any additional setup after loading the view.
 }
 
+- (IBAction)startAction:(id)sender {
+    NSLog(@"进去ARCourse");
+}
 
 @end
