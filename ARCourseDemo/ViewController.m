@@ -7,6 +7,8 @@
 
 #import "ViewController.h"
 
+#import <ARCSDK/ARCSDK.h>
+
 @interface ViewController ()
 
 @end
@@ -20,6 +22,14 @@
 
 - (IBAction)startAction:(id)sender {
     NSLog(@"进去ARCourse");
+    
+    ARLaunchViewController *ARlauch = [[ARLaunchViewController alloc] init];
+    ARlauch.companyID = @"companyID";
+    ARlauch.companyScreat = @"companyScreat";
+    ARlauch.userID = @"userID";
+    ARlauch.modalPresentationStyle = UIModalPresentationFullScreen;
+    [self.navigationController pushViewController:ARlauch animated:YES];
+    
 }
 
 @end
