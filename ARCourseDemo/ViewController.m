@@ -24,9 +24,12 @@
     NSLog(@"进去ARCourse");
     
     ARLaunchViewController *ARlauch = [[ARLaunchViewController alloc] init];
-    ARlauch.companyID = @"companyID";
-    ARlauch.companyScreat = @"companyScreat";
-    ARlauch.userID = @"userID";
+//    ARlauch.companyID = @"companyID";
+//    ARlauch.companyScreat = @"companyScreat";
+//    ARlauch.userID = @"userID";
+    ARlauch.companyID = @"highsky";
+    ARlauch.companyScreat = @"8081f91ef64146eb8e240a74891d374c";
+    ARlauch.userID = @"apple";
     ARlauch.modalPresentationStyle = UIModalPresentationFullScreen;
     [self.navigationController pushViewController:ARlauch animated:YES];
     
